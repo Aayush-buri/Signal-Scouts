@@ -28,6 +28,7 @@ export default function HeatmapView({
     const heatmapLayer: HeatmapLayer = {
         id: 'signal-heatmap',
         type: 'heatmap',
+        source: 'signal-data',
         paint: {
             // Increase weight as signal strength increases
             'heatmap-weight': [
